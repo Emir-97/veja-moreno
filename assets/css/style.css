@@ -1,0 +1,154 @@
+.header{
+	/*background: rgba(0,0,0,0.1);*/
+	margin-bottom: .2rem;
+	border-bottom: 1px solid black;
+	box-shadow: 0 0 2px 0;
+}
+.header, .header__nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.nav__titulo{
+	position: relative;
+	right: 15%;
+	padding: .5rem 0;
+}
+
+.nav__lista{
+	display: flex;
+	flex-direction: row;
+    text-align: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.item__link{
+	text-decoration: none;
+	margin-left: 3rem;
+	color: #85848a;
+	font-size: 1.3rem;
+}
+
+.item__link:hover{
+	border-bottom: 1px solid #363e3f;
+}
+
+.item:nth-child(3){
+	margin-left: 2rem;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.invisible{
+	display: none;
+}
+
+.section__login{
+	z-index: 10;
+	display: flex;
+	position: absolute;
+	left: 60%;
+	width: 40%;
+}
+
+.form{
+	display: flex;
+	flex-direction: column;
+	width: 65%;
+	text-align: center;
+	padding: .4rem 0;
+	border: 2px solid #D6DBDF;
+	border-radius: 5px;
+	color: white;
+	background: rgba(0,0,0,.15);
+	margin-top: 1rem; 
+}
+
+.form__label{
+	font-size: 1.4rem;
+	font-weight: bold;
+	padding: .5rem 0;
+}
+
+.form__input{
+	height: 2.3rem;
+	border-color: white;
+	border-radius: 6px;
+	color: #85848a;
+}
+
+.form__button{
+	margin: .5rem 0;
+}
+
+.form__button span{
+	color: white;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+
+/* RESPONSIVE */
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) and (max-width: 600px) {
+	.header__nav{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+    
+    .nav__titulo{
+        right: 0;
+        text-align: center;
+    }
+
+    .section__login{
+    	z-index: 2;
+    	position: relative;
+    	left: 0;
+    	width: 100%;
+    	justify-content: center;
+    }
+
+    .invisible{
+    	display: none;
+    }
+
+    .form{
+    	margin-bottom: .5rem;
+    }
+}
+
+    /* Small Devices, Tablets 768 */
+@media only screen and (min-width : 601px) and (max-width: 900px) {
+	.nav__titulo{
+		right: 0;
+	}
+
+	.item__link{
+		margin-left: 1rem;
+	}
+
+	.section__login{
+		justify-content: center;
+		left: 20%;
+		width: 70%;
+	}
+}
+
+    /* Medium Devices, Desktops */
+@media only screen and (min-width : 901px) and (max-width: 1200px) {
+	.section__login{
+		justify-content: center;
+		left: 40%;
+	}
+}
+
+    /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
